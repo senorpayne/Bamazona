@@ -76,7 +76,7 @@ console.log("Insufficient quantity!");
        stockUpdate();
         })})}
         inquier1();
-
+var stock;
         function stockUpdate(){
           var updatedStock = stock - userQuantity;
           connection.query("UPDATE stock FROM products WHERE stock > 0", function(err, results) {
